@@ -18,7 +18,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
     }
 
     public void login(View view) {
@@ -56,15 +55,12 @@ public class MainActivity extends AppCompatActivity {
                     }
                     else
                     {
-                        Toast.makeText(MainActivity.this, "LogIn Successful", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, "Congrats! LogIn Successful", Toast.LENGTH_SHORT).show();
                         ad.dismiss();
                     }
                 }
             }
         });
-
-
-
 
 
     }
@@ -79,8 +75,6 @@ public class MainActivity extends AppCompatActivity {
         final EditText ret3 = v.findViewById(R.id.reget3);
         final EditText ret4 = v.findViewById(R.id.reget4);
         Button regbut = v.findViewById(R.id.regbut);
-
-
 
         AlertDialog.Builder adb = new AlertDialog.Builder(this);
         adb.setView(v);
